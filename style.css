@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Mukta&display=swap');
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    font-family: 'Mukta', sans-serif;
+    font-size: 1rem;
+    background-color: #55423d ;
+}
+
+header{
+    background-color: #fffffe;
+}
+
+button{
+    padding: 8px;
+    outline: none;
+    cursor: pointer;
+    border: 1px solid lightgray;
+    border-radius: 5px;
+    background-color: #ffc0ad;
+    color: #271c19;
+
+}
+
+button:hover{
+    background-color: #fea184;
+}
+
+.container{
+    width: 95%;
+    margin: auto;
+}
+
+.nav{
+    display: flex;
+    width: 100%;
+    margin: auto;
+    padding: 15px 0;
+    padding-bottom: 10px;
+    justify-content: space-between;
+}
+.nav button{
+    font-family: inherit;
+}
+
+.createBox{
+    width:  400px;
+    margin: auto;
+    padding: 20px;
+    margin-top: 10px;
+    border-radius: 5px;
+    background-color: #fff3ec;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+}
+
+.createBox textarea{
+    width: 100%;
+    border-radius: 5px;
+    font-family: inherit;
+    border: 1px solid lightgray;
+    padding: 5px 10px ;
+}
+
+.createBox button{
+    width:  fit-content;
+}
+
+#actionBtn{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.flashcards{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: auto;
+    margin-top: 10px;
+    padding: 0 10px;
+}
+
+.flashcard{
+    width: 400px;
+    height: 200px;
+    word-wrap: break-word;
+    margin: 10px;
+    background-color: #fffffe;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+    padding: 10px;
+    
+}
+
+.flashcard h2{
+    font-size: 1rem;
+}
+
+@media (max-width: 768px) {
+    .flashcard{
+        margin: auto;
+    }
+    .flashcard{
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+}
+
+@media (max-width:480px) {
+    .nav{
+        flex-direction: column;
+        align-items: center;
+    }
+    .createBox{
+        width: 100%;
+    }
+    .flashcard{
+        width: 100%;
+    }
+}
